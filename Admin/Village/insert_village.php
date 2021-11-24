@@ -11,9 +11,9 @@
     if(!empty($village_fr) && !empty($village_ar))
     {
         
-        $query="INSERT INTO tb_village(ID_village,Titre_ar ,Titre_fr) 
+        $query="INSERT INTO tb_village(ID_village,Titre_village_ar ,Titre_village_fr) 
         VALUES('$id','$village_ar','$village_fr') ON DUPLICATE 
-        KEY UPDATE Titre_fr='$village_fr',Titre_ar='$village_ar'";
+        KEY UPDATE Titre_village_fr='$village_fr',Titre_village_ar='$village_ar'";
         $result=mysqli_query($conx,$query);
         if($result)
         {

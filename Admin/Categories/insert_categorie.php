@@ -12,9 +12,9 @@
     if(!empty($category_fr) && !empty($category_ar))
     {
         
-        $query="INSERT INTO tb_category(ID_category,Titre_ar ,Titre_fr) 
+        $query="INSERT INTO tb_category(ID_category,Titre_categorie_ar ,Titre_categorie_fr) 
         VALUES('$id','$category_ar','$category_fr') ON DUPLICATE 
-        KEY UPDATE Titre_fr='$category_fr',Titre_ar='$category_ar'";
+        KEY UPDATE Titre_categorie_fr='$category_fr',Titre_categorie_ar='$category_ar'";
         $result=mysqli_query($conx,$query);
         if($result)
         {

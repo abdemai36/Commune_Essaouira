@@ -34,8 +34,13 @@
                                         </div>
 
                                         <div class="mx-5">
-                                            <h4 class="text-2xl font-semibold text-gray-700">8,282</h4>
-                                            <div class="text-gray-500">New Users</div>
+                                            <?php
+                                                $query="SELECT count(*) FROM tb_article";
+                                                $result=mysqli_query($conx,$query);
+                                                $number_row=mysqli_fetch_row($result);
+                                            ?>
+                                            <h4 class="text-2xl font-semibold text-gray-700"><?php echo $number_row[0];?></h4>
+                                            <div class="text-gray-500">Nombre d'articles</div>
                                         </div>
                                     </div>
                                 </div>
