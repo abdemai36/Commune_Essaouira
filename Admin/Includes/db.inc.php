@@ -8,6 +8,6 @@
     $conx=mysqli_connect($host,$user,$password,$db_name);
 
     if(!$conx){
-        die("Connection field".mysqli_connect_errno());
+        die("Connection faild".mysqli_connect_errno());
         exit();
     }
