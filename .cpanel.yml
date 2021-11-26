@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/chrikeyc/essaouiracity.ma/
+    - /bin/cp * $DEPLOYPATH
