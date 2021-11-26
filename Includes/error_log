@@ -1,0 +1,325 @@
+[25-Nov-2021 10:51:46 Europe/London] PHP Parse error:  syntax error, unexpected '=' in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php on line 9
+[25-Nov-2021 10:52:03 Europe/London] PHP Parse error:  syntax error, unexpected '=' in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php on line 9
+[25-Nov-2021 11:00:49 Europe/London] PHP Parse error:  syntax error, unexpected '=' in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php on line 9
+[25-Nov-2021 11:02:32 Europe/London] PHP Parse error:  syntax error, unexpected '=' in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php on line 9
+[25-Nov-2021 11:12:44 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php on line 30
+[25-Nov-2021 11:22:45 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php on line 30
+[25-Nov-2021 11:25:23 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php on line 30
+[25-Nov-2021 11:25:26 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php on line 30
+[25-Nov-2021 11:25:45 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php on line 30
+[25-Nov-2021 11:26:03 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php on line 30
+[25-Nov-2021 11:26:38 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php on line 30
+[25-Nov-2021 11:27:26 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli_stmt_get_result() in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/Includes/login.inc.php on line 30
+[25-Nov-2021 14:09:15 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(85): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:11:05 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(85): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:13:23 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(85): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:14:18 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(85): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:17:00 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:22:05 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:24:04 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:26:51 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:27:03 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:27:47 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:28:03 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:37:58 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:39:48 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:40:03 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:43:34 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:44:25 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:45:24 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:45:34 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:48:39 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(87): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:49:29 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:54:11 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(90): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:55:35 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(90): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 14:57:44 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 15:01:18 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 15:02:04 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 15:04:06 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 15:04:18 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 15:13:20 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 15:54:26 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:2159
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1970): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#2 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2159
+[25-Nov-2021 16:01:17 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:1971
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#2 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#3 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1971
+[25-Nov-2021 16:01:45 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:1971
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#2 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#3 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1971
+[25-Nov-2021 16:02:14 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:1971
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#2 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#3 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1971
+[25-Nov-2021 16:05:21 Europe/London] PHP Notice:  Undefined variable: email_use in /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php on line 84
+[25-Nov-2021 16:05:21 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (to):  in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:1092
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1014): PHPMailer\PHPMailer\PHPMailer->addOrEnqueueAnAddress('to', '', 'Essaouira commu...')
+#1 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(84): PHPMailer\PHPMailer\PHPMailer->addAddress(NULL, 'Essaouira commu...')
+#2 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1092
+[25-Nov-2021 16:09:00 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: The following From address failed: sidifaressbazar@gmail.com : MAIL FROM command failed,Authentication Required. Learn more at
+ https://support.google.com/mail/?p=WantAuthError y15sm3994471wry.72 - gsmtp
+,530,5.7.0SMTP server error: MAIL FROM command failed Detail: Authentication Required. Learn more at
+ https://support.google.com/mail/?p=WantAuthError y15sm3994471wry.72 - gsmtp
+ SMTP code: 530 Additional SMTP info: 5.7.0 in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:1981
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#2 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#3 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1981
+[25-Nov-2021 16:12:11 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: The following From address failed: sidifaressbazar@gmail.com : MAIL FROM command failed,Authentication Required. Learn more at
+ https://support.google.com/mail/?p=WantAuthError d188sm10028760wmd.3 - gsmtp
+,530,5.7.0SMTP server error: MAIL FROM command failed Detail: Authentication Required. Learn more at
+ https://support.google.com/mail/?p=WantAuthError d188sm10028760wmd.3 - gsmtp
+ SMTP code: 530 Additional SMTP info: 5.7.0 in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:1981
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#2 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(89): PHPMailer\PHPMailer\PHPMailer->send()
+#3 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1981
+[25-Nov-2021 16:20:09 Europe/London] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php:1971
+Stack trace:
+#0 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1648): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Thu, 25 N...', ' message <a tar...')
+#1 /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php(1486): PHPMailer\PHPMailer\PHPMailer->postSend()
+#2 /home/chrikeyc/essaouiracity.ma/Includes/reset-request.inc.php(90): PHPMailer\PHPMailer\PHPMailer->send()
+#3 {main}
+  thrown in /home/chrikeyc/essaouiracity.ma/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1971

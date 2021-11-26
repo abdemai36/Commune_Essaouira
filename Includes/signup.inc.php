@@ -72,7 +72,7 @@
 
     }else
     {
-        header("location:null_page.php");
+        header("location:../null_page.php");
         exit();
     }
 

@@ -1,6 +1,48 @@
 <?php
-    include_once("Includes/Navbar.php");
+
+    session_start();
+    include_once("Admin/Includes/db.inc.php");
+    if(isset($_SESSION['iduser']) && !empty($_SESSION['iduser']))
+    {
+        header("location:profile");
+        exit();
+    }
+    
+    
 ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik&family=Sirin+Stencil&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="overflow-x-hidden w-screen" x-data="{navOpen: false, scrolledFromTop: false }"
+    x-init="window.pageYOffset >= 10 ? scrolledFromTop = true : scrolledFromTop = false"
+    @scroll.window="window.pageYOffset >= 10 ? scrolledFromTop = true : scrolledFromTop = false"
+    :class="{'overflow-hidden': navOpen,'overflow-scroll': !navOpen}">
     <div class="h-screen w-screen flex justify-center items-center">
         <div
             class="flex flex-col justify-center items-center bg-white px-5 md:px-20 py-5 rounded-lg h-full md:h-auto w-full lg:w-4/12 shadow">
@@ -111,7 +153,7 @@
            ?>
             <!-- End danger alert -->
             <!-- form start -->
-            <form action="includes/login.inc.php" method="POST" class="flex flex-col space-y-6 w-full">
+            <form action="Includes/login.inc" method="POST" class="flex flex-col space-y-6 w-full">
                 <input type="email" name="email" autocomplete="off" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  focus:border-blue-500  focus:outline-none shadow" placeholder="Saisir votre email">
                 <!-- password input -->
                 <div x-data="{ show: true }">

@@ -73,7 +73,7 @@
                 }else{
                     if(ctype_xdigit($selector)!==false && ctype_xdigit($validator)!==false)
                     {?>
-                    <form action="includes/reset-password.inc.php" method="POST" class="flex flex-col space-y-6 w-full">
+                    <form action="Includes/reset-password.inc" method="POST" class="flex flex-col space-y-6 w-full">
                         <div>
                             <p class="text-sm"></p>
                             <input type="hidden" name="selector" value="<?php echo $selector;?>">

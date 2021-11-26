@@ -1,8 +1,11 @@
 <?php
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
-    use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\Exception; 
+    ini_set('display_errors', '1');
+        error_reporting(-1);
     include_once("../Admin/Includes/db.inc.php");
+   
 
     if(isset($_POST["send-code"]))
     {
@@ -28,7 +31,7 @@
                     $selector=bin2hex(random_bytes(8));
                     $token=random_bytes(32);
         
-                    $URL="http://localhost/commune/create-new-password?selector=".$selector."&token=".bin2hex($token);
+                    $URL="http://essaouiracity.ma/create-new-password?selector=".$selector."&token=".bin2hex($token);
         
                     $expires=date("U")+1800;
         
@@ -65,19 +68,21 @@
                     require '../vendor/autoload.php';
                     // //Instantiation and passing `true` enables exceptions
                     $mail = new PHPMailer(true);
-                    $mail->isSMTP();                                            //Send using SMTP
-                    $mail->Host = "ssl://smtp.gmail.com";                     //Set the SMTP server to send through
+                    //$mail->isSMTP();  
+                    //Send using SMTP
+                    $mail->Host = "essaouiracity.ma";                     
+                    //Set the SMTP server to send through
                     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                    $mail->Username   = "abde.mai36@gmail.com";                     //SMTP username
-                    $mail->Password   = "abdellah@mailal2021";                               //SMTP password
+                    $mail->Username   = "essaouira@essaouiracity.ma";                     //SMTP username
+                    $mail->Password   = "essaouiracity2000";                               //SMTP password
                     $mail->SMTPSecure = "ssl";         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
                     $mail->Port       = 465;   
         
                     $mail->isHTML(true); 
                     $mail->CharSet="UTF-8";
         
-                    $mail->setFrom($email_user);
-                    $mail->addAddress($email_user); 
+                    $mail->setFrom('essaouira@essaouiracity.ma',"Essaouira commune");
+                    $mail->addAddress($email_user,"Essaouira commune"); 
         
                     $mail->Subject = "Nouvell mot de passe";
                     $mail->Body    = " message "."<a target='_blank' href='".$URL."'>".$URL."</a>";
@@ -85,7 +90,12 @@
                     $mail->send();
                     if($mail)
                     {
-                        header("location:../reset-password.php?reset=success");
+                        header("location:../reset-password?reset=success");
+                        exit();
+
+                        
+                    }else{
+                        header("location:../reset-password?reset=empty-email");
                         exit();
                     }
                     

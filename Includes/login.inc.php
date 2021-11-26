@@ -1,10 +1,15 @@
 <?php
     session_start();
     include_once("../Admin/Includes/db.inc.php");
+    
+    //ini_set('display_errors', 1);
+    //ini_set('display_startup_errors', 1);
+    //error_reporting(E_ALL);
+    
     if(isset($_POST["login-submit"]))
     {
-        $email= mysqli_real_escape_string($conx, $_POST["email"]);
-        $pwd= mysqli_real_escape_string($conx, $_POST["pwd"]);
+        $email= mysqli_real_escape_string($conx,$_POST["email"]);
+        $pwd= mysqli_real_escape_string($conx,$_POST["pwd"]);
 
         if(empty($email) || empty($pwd)){
             header("location:../Seconnecter?form=empty");

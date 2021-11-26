@@ -4,5 +4,5 @@ Options +MultiViews
 
 #RewriteRule ^hi contact.php [NC,L]
  
-#ErrorDocument 404 /Devsoltech_pub/404.php
+ErrorDocument 404 /commune/404.php
 #RewriteRule Seconnecter.php/wrongpwd Seconnecter.php?form=wrongpwd 

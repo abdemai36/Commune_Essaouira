@@ -1,7 +1,8 @@
 <?php
 
     include_once("../Admin/Includes/db.inc.php");
-
+        ini_set('display_errors', '1');
+        error_reporting(-1);
     if(isset($_POST["reset-password-submit"])){
         $selector=$_POST["selector"];
         $validator=$_POST["validator"];
