@@ -1,77 +1,89 @@
 <?php
     include_once("Includes/Navbar.php");
+    include_once("Includes/sidbar_profile.php");
+    if(isset($_POST["submit"]))
+    {
+        $f_name=$_POST["f-name"];
+        $l_name=$_POST["l-name"];
+        $email=$_POST["email"];
+        $new_pass=$_POST["new-pass"];
+        $old_pass=$_POST["old-pass"];
+
+        if(empty($f_name) || empty($l_name)|| empty($new_pass) || empty($old_pass)){
+            header("location:Profil-details?langu=".$_SESSION['langu']."&form=empty");
+            exit();
+        }elseif($old_pass!==$new_pass){
+            header("location:Profil-details?langu=".$_SESSION['langu']."&form=wrongpassword");
+            exit();
+        }elseif(strlen($new_pass)<6 || strlen($new_pass)>20){
+            header("location:Profil-details?langu=".$_SESSION['langu']."&form=lenpassword");
+            exit();
+        }else
+        {
+            $query="UPDATE tb_login SET Pwd_user=?,F_name_user=?,L_name_user=? WHERE Email_user=?";
+            $stmt=mysqli_stmt_init($conx);
+            if(!mysqli_stmt_prepare($stmt,$query))
+            {
+                echo "Error en niveau de base de donnée";
+                exit();
+            }else{
+                $newhash_pwd=password_hash($new_pass,PASSWORD_DEFAULT);
+                mysqli_stmt_bind_param($stmt,"ssss",$newhash_pwd,$f_name,$l_name,$email);
+                mysqli_stmt_execute($stmt);
+                $result=mysqli_stmt_prepare($stmt,$query);
+                if(!$result){
+                    header("location:Profil-details?langu=".$_SESSION['langu']."&form=error");
+                    exit();
+                }else{
+                    ///start here
+                    $query="SELECT * FROM tb_login WHERE Email_user=?";
+                    $stmt=mysqli_stmt_init($conx);
+                    if(!mysqli_stmt_prepare($stmt,$query)){
+                        header("location:Profil-details?langu=".$_SESSION['langu']."&form=error");
+                            exit();
+                    }else{
+                        mysqli_stmt_bind_param($stmt,"s",$email);
+                        mysqli_stmt_execute($stmt);
+                        $result=mysqli_stmt_get_result($stmt);
+                        if($row=mysqli_fetch_assoc($result))
+                        {
+                            $_SESSION["iduser"]=$row["ID_user"];
+                            $_SESSION["username"]=$row["F_name_user"]." ".$row["L_name_user"];
+                            $_SESSION["email"]=$row["Email_user"];
+                            header("location:Profil-details?langu=".$_SESSION['langu']."&form=success");
+                            exit();
+                        }else{
+                            header("location:Profil-details?langu=".$_SESSION['langu']."&form=error");
+                            exit();
+                        }
+                    }
+                    //end here
+                }
+            }
+        }
+
+    }
+    
 ?>
-
-    <div class="h-10 bg-gray-300">
-        <div class="containers m-auto flex items-center h-full space-x-2">
-            <a href="">Acceuil</a>
-            <span>/</span>
-            <a href="">Anonces</a>
-        </div>
-    </div>
-
-
-    <div class="containers m-auto my-20">
-
-        <h1 class="text-4xl font-light mb-10">Mon espace citoyen</h1>
-        <div class="flex justify-between">
-
-            <div
-                class="flex flex-col w-full lg:w-96 h-72 bg-white overflow-hidden border-t-4 border-blue-800 rounded-lg shadow-xl">
-                <div class="flex items-center justify-between py-5  m-auto">
-                    <div class="w-10 h-10 rounded-full"><img src="images/avatar.jpg" alt=""></div>
-                    <h1 class="text-3xl uppercase text-blue-800">Abdo Abdo</h1>
-                </div>
-                <ul class="flex flex-col">
-                    <li class="border-t-2 border-b-2 px-2">
-                        <a href="#"
-                            class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
-                            <i class="fa fa-th mx-2"></i>
-                            <span class="text-sm font-medium">Table de bord</span>
-                        </a>
-                    </li>
-                    <li class=" border-b-2 px-2">
-                        <a href="#"
-                            class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
-                            <i class="fa fa-user mx-2"></i>
-                            <span class="text-sm font-medium">Profile</span>
-                        </a>
-                    </li>
-                    <li class=" border-b-2 px-2">
-                        <a href="#"
-                            class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
-                            <i class="far fa-envelope mx-2"></i>
-                            <span class="text-sm font-medium">Reclamations</span>
-                        </a>
-                    </li>
-                    <li class="  px-2">
-                        <a href="#"
-                            class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-red-500">
-                            <i class="fas fa-sign-out-alt mx-2"></i>
-                            <span class="text-sm font-medium">Deconnecter</span>
-                        </a>
-                    </li>
-
-
-                </ul>
-            </div>
-            <div>
-
-            </div>
             <div class="w-full flex justify-center">
                 <div class="w-4/5 bg-white rounded-lg shadow-xl border-blue-800 border-t-4">
-                    <h1 class="text-center text-4xl font-light mt-5">Mon profil</h1>
-                    <div class="w-32 h-32"><img src="images/avatar.jpg" alt=""></div>
-                    <form action="" class="p-4">
 
-                        <input type="text"
-                            class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  focus:border-blue-500  focus:outline-none shadow"
-                            placeholder="Saisir votre nom">
-                        <input type="text"
-                            class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  focus:border-blue-500  focus:outline-none shadow"
-                            placeholder="Saisir votre prenom">
-
-                        <button class="primary-color text-white p-2 rounded">Modifier</button>
+                    <div class="w-full flex justify-center"><img src="images/avatar.jpg" alt="" class="w-32 h-32"></div>
+                    <h1 class="text-center text-4xl font-light mt-5"><?php echo $lang["Mon profile"];?></h1>
+                    <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST" class="p-4">
+                    <?php
+                        $name=explode(" ",$_SESSION['username']);
+                        $f_name=$name[0];
+                        $l_name=$name[1];
+                    ?>
+                        <input type="text" name="f-name" value="<?php echo $f_name;?>" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  focus:border-blue-500  focus:outline-none shadow my-4"  placeholder="<?php echo $lang["Saisir votre nom complet"];?>">
+                        <input type="text" name="l-name" value="<?php echo $l_name;?>" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  focus:border-blue-500  focus:outline-none shadow my-4"  placeholder="<?php echo $lang["Saisir votre nom complet"];?>">
+                        <input type="text" name="email" readonly value="<?php echo $_SESSION['email'];?>" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-gray-100 border border-gray-300 rounded-md  focus:border-blue-500  focus:outline-none shadow my-4" placeholder="<?php echo $lang["Saisir votre email"];?>">
+                        <input type="text" name="new-pass" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  focus:border-blue-500  focus:outline-none shadow my-4"  placeholder="<?php echo $lang["Saisir votre ancien mot de passe"];?>">
+                        <input type="text" name="old-pass" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  focus:border-blue-500  focus:outline-none shadow my-4"  placeholder="<?php echo $lang["Saisir votre nouveau mot de passe"];?>">
+                        <div class="w-full flex justify-center mt-5">
+                            <button type="submit" name="submit" class="primary-color text-white p-2 rounded w-full"><?php echo $lang['Modifier'];?></button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -82,6 +94,3 @@
 <?php
     include_once("Includes/footer.php");
 ?>
-
-
- 

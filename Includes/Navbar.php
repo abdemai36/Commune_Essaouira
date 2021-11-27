@@ -1,6 +1,9 @@
 <?php
     session_start();
+    ob_start();
+   
     include_once("Admin/Includes/db.inc.php");
+    include_once("languages/lang_config.php");
     if(!isset($_SESSION['iduser']) && empty($_SESSION['iduser']))
     {
         header("location:Seconnecter");
@@ -16,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles2.css">
-    <title>Document</title>
+    <title>Essaouira city</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -30,18 +33,20 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik&family=Sirin+Stencil&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik&family=Sirin+Stencil&display=swap" rel="stylesheet">
 </head>
 
 <body class="overflow-x-hidden w-screen" x-data="{navOpen: false, scrolledFromTop: false }"
     x-init="window.pageYOffset >= 10 ? scrolledFromTop = true : scrolledFromTop = false"
     @scroll.window="window.pageYOffset >= 10 ? scrolledFromTop = true : scrolledFromTop = false"
-    :class="{'overflow-hidden': navOpen,'overflow-scroll': !navOpen}">
-
-
+    :class="{'overflow-hidden': navOpen,'overflow-scroll': !navOpen}" 
+    <?php
+    if(isset($_SESSION["dir"]))
+    { ?>
+        dir="<?php echo $_SESSION['dir'];?>"> 
+    <?php }
+    ?>
+    >
 
     <header class="w-full  flex justify-between primary-color items-center transition-all duration-200h-20 z-50 "
         :class="{'h-20': !scrolledFromTop, 'h-14 fixed top-0 shadow ': scrolledFromTop}">
@@ -97,8 +102,13 @@
   
                     }
                 ?>
-               
             </a>
+            <?php
+            $currentURL=explode("?",$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']) ;
+            //$currentURL.=$_SERVER['REQUEST_URI'];
+            ?>
+            <a href="http://<?php echo $currentURL[0];?>?langu=fr">fr</a>
+            <a href="http://<?php echo $currentURL[0];?>?langu=ar">العربية</a>
             </div>
         </div>
 

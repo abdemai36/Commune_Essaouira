@@ -102,9 +102,6 @@
         </div>
     </div>
     <script src="/alpine.js"></script>
-    <script>
-
-    </script>
 </body>
 
 </html>
